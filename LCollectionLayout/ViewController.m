@@ -59,7 +59,7 @@
 
 - (LCollectionLayout *)layout {
     if (!_layout) {
-        _layout = [[LCollectionLayout alloc] initCollectionLayoutWithColCount:3 colMargin:5 rolMargin:5 itemHeightBlock:^CGFloat(NSIndexPath *indexPath) {
+        _layout = [[LCollectionLayout alloc] initCollectionLayoutWithColCount:2 colMargin:15 rolMargin:25 itemHeightBlock:^CGFloat(NSIndexPath *indexPath) {
             return [_dataSource[indexPath.item] floatValue];
         }];
     }
